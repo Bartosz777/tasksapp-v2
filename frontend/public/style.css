@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'Tilt Neon', cursive;
+}
+
+/* header */
+
+header {
+    background-color: yellowgreen;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+header h3 {
+    font-size: 2rem;
+}
+
+header h3 a, .navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: #e1e1e1;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* Home page */
+
+.home-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+
+/* task-details */
+
+.task-details {
+    width: 60%;
+}
+
+.task {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    -moz-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+
+    -webkit-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    -moz-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+}
+
+.task h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.task p {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.task p:nth-last-child(1) {
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .5)
+}
+
+/* task form */
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 7px;
+    -webkit-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    -moz-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+}
+
+.task-form label, .task-form input {
+    margin-bottom: 15px;
+}
+
+.task-form label, .login-form label {
+    font-size: 1.5rem;
+}
+
+.task-form input, .login-form input {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #e1e1e1;
+}
+
+.task-form input:focus, .login-form input:focus {
+    background-color: #fff;
+}
+
+.task-form button, .login-form button {
+    color: white;
+    width: 30%;
+    height: 40px;
+    background-color: rgb(131, 182, 31);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.task-form button:hover, .login-form button:hover {
+    cursor: pointer;
+    background-color: #2fd835;
+}
+
+.delete-button {
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.8rem
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    margin: 20px auto 0 auto;
+    border: 2px solid #f64848;
+    background-color: #FF9494;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+.error-input {
+    border: 2px solid #f03e3e;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom : 0;
+    width: 100%;
+    color: rgba(0, 0, 0 , .2)
+}
+
+footer p {
+    text-align: center;
+    padding: 3px 0;
+}
+
+
+/* login & signup form*/
+
+.login {
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    -moz-box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+    box-shadow: 8px 0px 29px -1px rgba(20, 20, 23, 1);
+}
+
+.login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form input {
+    margin-bottom: 20px;
+    width: 60%;
+} 
+
+.logged {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .login {
+        height: 500px;
+        width: 80%;
+    }
+
+    .navbar div a {
+        font-size: 1.5rem;
+    }
+
+    .task-form button {
+        width: 50%;
+    }
+}
